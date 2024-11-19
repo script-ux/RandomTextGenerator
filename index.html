@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Text Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #random-text {
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="random-text"></div>
+    <script>
+        // Array of sentences
+        const sentences = [
+            "Welcome to the website!",
+            "You forget a thousand things every day, pal. Make sure this is one of 'em.",
+            "You're failing the 6th grade, Jamal!",
+            "You're failing the 7th grade, Jacob!",
+            "You're failing the 8th grade, Jarquavious!"
+        ];
+
+        // Pick a random sentence
+        const randomIndex = Math.floor(Math.random() * sentences.length);
+        const randomText = sentences[randomIndex];
+
+        // Display it
+        document.getElementById('random-text').innerText = randomText;
+    </script>
+</body>
+</html>
